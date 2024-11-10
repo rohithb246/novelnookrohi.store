@@ -50,8 +50,8 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'home_header.php'; ?>
 
 <div class="heading">
-   <h3>search page</h3>
-   <p> <a href="home.php">home</a> / search </p>
+   
+   <p> <a href="home.php"></a> </p>
 </div>
 
 <section class="search-form">

@@ -81,7 +81,9 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: var(--light-bg);
+    background: url(images/loginimage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .form-container form {

@@ -63,10 +63,11 @@ if(isset($message)){
 ?>
 
 <div class="form-container">
+
 <form action="" method="post">
     <h3>Register now</h3>
-<input type="text" name="name" placeholder="Enter your name" required class="box">
-<input type="email" name="email" placeholder="Enter your email" required class="box">
+<input type="text" pattern="[A-Z a-z]+"name="name" placeholder="Enter your name" required class="box">
+<input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" name="email" placeholder="Enter your email" required class="box">
 <input type="password" name="password" placeholder="Enter your password" required class="box">
 <input type="password" name="cpassword" placeholder="Confirm your password" required class="box">
 <select name="user_type" class="box">

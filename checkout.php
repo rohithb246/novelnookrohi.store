@@ -16,7 +16,7 @@ if(isset($_POST['order_btn'])){
    $number = $_POST['number'];
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $method = mysqli_real_escape_string($conn, $_POST['method']);
-   $address = mysqli_real_escape_string($conn, 'flat no. '. $_POST['flat'].', '. $_POST['street'].', '. $_POST['city'].', '. $_POST['country'].' - '. $_POST['pin_code']);
+   $address = mysqli_real_escape_string($conn, 'flat no. , '. $_POST['street'].', '. $_POST['city'].', '. $_POST['country'].' - '. $_POST['pin_code']);
    $placed_on = date('d-M-Y');
 
    $cart_total = 0;
@@ -71,10 +71,7 @@ if(isset($_POST['order_btn'])){
 <?php include 'home_header.php'; ?>
 
 <div class="heading">
-   <h3>checkout</h3>
-   <p> <a href="home.php">home</a> / checkout </p>
-</div>
-
+   
 <section class="display-order">
 
    <?php  
@@ -99,61 +96,57 @@ if(isset($_POST['order_btn'])){
 <section class="checkout">
 
    <form action="" method="post">
-      <h3>place your order</h3>
+      <h3>Place your order</h3>
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" required placeholder="Enter your name">
+
+            <span>Name:</span>
+            <input type="text" pattern="[A-Z a-z]+" name="name" required placeholder="Enter your name">
          </div>
          <div class="inputBox">
-            <span>your number :</span>
-            <input type="number"  min="10"  name="number" required placeholder="Enter your number">
+            <span>Contact number :</span>
+            <input type="tel"  minlength="10" maxlength="10" name="number" pattern="[0-9]{10}"  required placeholder="Enter your number">
          </div>
          <div class="inputBox">
-            <span>your email :</span>
+            <span>E-mail :</span>
             <input type="email" name="email" required placeholder="Enter your email">
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
-            <select name="method">
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paypal">paypal</option>
-               <option value="paytm">paytm</option>
-            </select>
-         </div>
-         <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
-         </div>
-         <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="street" required placeholder="e.g. street name">
-         </div>
-         <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" required placeholder="e.g. Bangalore">
-         </div>
-         <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" required placeholder="e.g. Karnataka">
-         </div>
-         <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" required placeholder="e.g. India">
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
+            <span>Pin code :</span>
             <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+         </div>
+    
+         <div class="inputBox">
+            <span>Address:</span>
+            <input type="text" name="street" required placeholder="e.g. Address">
+         </div>
+         <div class="inputBox">
+            <span>City :</span>
+            <input type="text" pattern="[A-Za-z]+"name="city" required placeholder="e.g. Bangalore">
+         </div>
+         <div class="inputBox">
+            <span>State :</span>
+            <input type="text" pattern="[A-Za-z]+"name="state" required placeholder="e.g. Karnataka">
+         </div>
+         <div class="inputBox">
+            <span>Country :</span>
+            <input type="text" pattern="[A-Za-z]+"name="country" required placeholder="e.g. India">
+         </div>
+      
+         <div class="inputBox">
+            <span>Payment method :</span>
+            <select name="method">
+               <option value="cash on delivery">Cash on delivery</option>
+               <option value="credit card">Credit card</option>
+               <option value="paypal">Paypal</option>
+               <option value="paytm">Paytm</option>
+            </select>
          </div>
       </div>
       <input type="submit" value="order now" class="btn" name="order_btn">
    </form>
 
 </section>
-
-
-
 
 
 

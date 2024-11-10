@@ -52,7 +52,6 @@ if(isset($_POST['add_to_cart'])){
 
 
 
-
 <section class="home">
    <div class="swiper mySwiper">
      <div class="swiper-wrapper">
@@ -127,14 +126,17 @@ if(isset($_POST['add_to_cart'])){
 <section class="about">
 
    <div class="flex">
-
-      <div class="image">
+ 
+   <div class="image">
          <img src="images/about-img.jpg" alt="">
       </div>
 
+
       <div class="content">
          <h3>ABOUT US</h3>
-         <p>CHAPTERONE IS INDIA'S LARGEST AND CHEAPEST ONLINE BOOKSTORES OFFERING 40+MILLION SELECTIONS</p>
+         <p>"Navelnook" appears to be a made-up word that does not have a specific meaning or commonly recognized association. As a result, it does not immediately evoke any particular imagery or convey a specific concept related to a bookstore or books.
+
+When choosing a name for a bookstore or any business.</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
@@ -191,7 +193,7 @@ if(isset($_POST['add_to_cart'])){
     <h3>Contact Info</h3>
     <a href="#"><i class="fas fa-phone"></i>+91-90199442</a>
     <a href="#"><i class="fas fa-phone"></i>+91-59356694</a>
-    <a href="#"><i class="fas fa-envelope"></i>chapterone @gmail.com</a>
+    <a href="#"><i class="fas fa-envelope"></i>Novelnook @gmail.com</a>
     <a href="#"><i class="fas fa-map"></i>Bangalore,India-560064</a>
 </div>
 <div class="box">

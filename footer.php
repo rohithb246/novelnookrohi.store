@@ -22,7 +22,7 @@
     <h3>Contact Info</h3>
     <a href="#"><i class="fas fa-phone"></i>+91-90199442</a>
     <a href="#"><i class="fas fa-phone"></i>+91-59356694</a>
-    <a href="#"><i class="fas fa-envelope"></i>chapterone @gmail.com</a>
+    <a href="#"><i class="fas fa-envelope"></i>novelnook@gmail.com</a>
     <a href="#"><i class="fas fa-map"></i>Bangalore,India-560064</a>
 </div>
 <div class="box">

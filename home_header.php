@@ -16,7 +16,7 @@ if(isset($message)){
 
 <header class="header">
 <div class="flex">
-<a href="home.php" class="logo">Chapter<span>One</span></a>
+<a href="home.php" class="logo">Novel<span>nook</span></a>
 
 
 
@@ -24,9 +24,9 @@ if(isset($message)){
 <a href="home.php">Home</a>
     <a href="about.php">About</a>
    
-    <a href="shop.php">shop</a>
-    <a href="contact.php">contact</a>
-    <a href="orders.php">orders</a>
+    <a href="shop.php">Shop</a>
+    <a href="contact.php">Contact</a>
+    <a href="orders.php">Orders</a>
  
 
 
@@ -55,7 +55,7 @@ if(isset($message)){
                $select_cart_number = mysqli_query($conn, "SELECT `id`, `user_id`, `name`, `price`, `quantity`, `image` FROM `cart` WHERE 1") or die('query failed');
                $cart_rows_number = mysqli_num_rows($select_cart_number); 
             ?>
-            <a href="cart.php"> <i class="fas fa-shopping-cart"></i> <span>(<?php echo $cart_rows_number; ?>)</span> </a>
+            <a href="cart.php"> <i class="fas fa-shopping-cart"></i> <span> (<?php echo $cart_rows_number; ?>) </span> </a>
          </div>
   </div>
 

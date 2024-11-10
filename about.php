@@ -32,8 +32,8 @@ if(!isset($user_id)){
 <?php include 'home_header.php'; ?>
 
 <div class="heading">
-   <h3>about us</h3>
-   <p> <a href="home.php">home</a> / about </p>
+ 
+   <p> <a href="home.php"></a></p>
 </div>
 
 <section class="about">
@@ -41,13 +41,15 @@ if(!isset($user_id)){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="images/about1.png" alt="">
       </div>
 
       <div class="content">
          <h3>ABOUT US?</h3>
-         <p>THIS NAME HAS A NOSTALGIC FEEL TO IT AND WOULD BE PERFECT FOR A WEBSITE THAT FOCUSES ON BOOK REVIEWS,RECOMMENDATIONS AND DISCUSSIONS ABOUT CLASSIC LITERATURE</p>
-         <a href="contact.php" class="btn">contact us</a>
+         <p>"Novel Nook" is a hypothetical name suggested for a bookstore website in my previous response. It is a name that aims to create a cozy and inviting atmosphere for book lovers. The term "nook" refers to a small, cozy corner or space, often associated with comfort and relaxation. By combining it with "novel," the name highlights the focus on novels and emphasizes the pleasure of discovering new books.
+
+If you are interested in using the name "Novel Nook" for your bookstore website, it's essential to conduct a thorough search to ensure that the domain name is available and that there are no trademark or copyright conflicts with the chosen name. Additionally, consider developing a unique branding strategy</p>
+         <a href="contact.php" class="btn">Contact us</a>
       </div>
 
    </div>

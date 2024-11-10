@@ -50,8 +50,8 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'home_header.php'; ?>
 
 <div class="heading">
-   <h3>Our shop</h3>
-   <p> <a href="home.php">Home</a> / Shop </p>
+   
+   <p> <a href="home.php"></a></p>
 </div>
 
 <section class="products">
@@ -116,7 +116,7 @@ if(isset($_POST['add_to_cart'])){
     <h3>Contact Info</h3>
     <a href="#"><i class="fas fa-phone"></i>+91-90199442</a>
     <a href="#"><i class="fas fa-phone"></i>+91-59356694</a>
-    <a href="#"><i class="fas fa-envelope"></i>chapterone @gmail.com</a>
+    <a href="#"><i class="fas fa-envelope"></i>Navelnook@gmail.com</a>
     <a href="#"><i class="fas fa-map"></i>Bangalore,India-560064</a>
 </div>
 <div class="box">

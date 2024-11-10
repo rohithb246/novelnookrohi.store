@@ -198,6 +198,12 @@ html::-webkit-scrollbar-thumb {
     margin: 1rem 0;
 }
 
+section.dashboard {
+    background: url(images/loginimage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .message {
     position: sticky;
     top: 0;
