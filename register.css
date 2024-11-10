@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rancho&display=swap');
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: 1em solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: visible;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.option-btn:hover {
+    background-color: orange;
+}
+
+.delete-btn:hover {
+    background-color: red;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.white-btn,
+.btn {
+    background-color: var(--main-color);
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+    background-color: var(--black);
+}
+
+.form-container {
+    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: var(--light-bg);
+}
+
+.form-container form {
+    padding: 2rem;
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.form-container form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.message {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem
+}
+
+.message span {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.message i {
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+.message i:hover {
+    transform: rotate(90deg);
+}
+
+.form-container form p {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.form-container form p a {
+    color: var(--main-color);
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
